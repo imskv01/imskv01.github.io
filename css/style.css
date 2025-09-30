@@ -9702,4 +9702,34 @@ textarea.form-control {
     stroke-dashoffset: -35px; }
   100% {
     stroke-dasharray: 89, 200;
-    stroke-dashoffset: -136px; } }
+    stroke-dashoffset: -136px; } } 
+
+/* Mobile view */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about {
+    text-align: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+
